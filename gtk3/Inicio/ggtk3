@@ -1,0 +1,2 @@
+gcc -Wall -g -ggdb `pkg-config --cflags --libs gtk+-3.0` -c $1.c
+gcc -Wall -g -ggdb -o $1 $1.o `pkg-config --libs gtk+-3.0` -lm

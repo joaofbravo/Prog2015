@@ -1,0 +1,42 @@
+@define-color bg_color3 #00a039;
+
+GtkWindow  {
+    background-image: url('images/rio.jpg');
+}
+
+GtkFrame {
+    /* Ver o que acontece quando se comenta a linha abaixo */
+    background-color: #FFE4C4;
+    border-color: #0000FF;
+    border-width: 2px;
+}
+
+GtkButton {
+    color: #ff00ea;
+    background: #70DB93;
+    border-width: 10px;
+    border-color: #000000;
+    font: Tahoma bold 12;
+}
+
+GtkButton:focused {
+    color: #0000FF;
+    background: #ff00cc;
+    font: Tahoma bold 12;
+}
+
+GtkButton:prelight {
+    color: #3399CC;
+    font: Tahoma bold 12;
+}
+
+GtkButton:active {
+    color: #FF0000;
+    background: #00FFFF;
+    font: Tahoma bold 12;
+}
+
+GtkDrawingArea {
+    background-color: #E0EEE0;
+}
+

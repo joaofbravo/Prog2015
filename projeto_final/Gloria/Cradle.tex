@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {C:/Users/João/Desktop/Latex} }
+\title{Newton's Cradle}
+\author{by Gl\'oria de S\'a Pereira, 81826 \& Jo\~ao Cunha, 81541}
+\date{January 2015}
+
+\begin{document}
+
+\maketitle
+\noindent\hrulefill
+\section{Introduction}
+\begin{figure}[hb]
+  \centering
+  \includegraphics[width=5cm]{cradle.jpg}
+  \caption[Newton's Cradle]
+    {Newton's Cradle.}
+\end{figure}
+\begin{quote}
+Newton's cradle, named after Sir Isaac Newton, is a device that demonstrates conservation of momentum and energy via a series of collisions between swinging spheres.\ When the one, or more,  is lifted and released, it strikes the stationary spheres; a force is transmitted through those spheres, pushing the last one upward.
+
+With this program, we hope to reproduce computationally the movement of an ideal cradle. This means we will consider a system were both thel energy and momentum of the cradle id conserved , whichl makes it easier to understand its motion.\ In order to describe the cradle's motion we will use the Euler-Cromer method of solving equations, which is more precise than the usual numeric method, and better adapted for programing.
+\end{quote}
+\noindent\hrulefill
+\section{Theorical Explanation}
+\begin{quote}
+If a sphere is pulled away from the others, it stores a certain amount of potencial energy, proporcional to its heigth. When released, it falls due to the effect of gravity, transforming its potencial energy into kinetic energy. Eventually, it collides with the stationary ones, immediately ceasing its movement and transfering all its velocity to the sphere with whom it collides (and therefore all its momentum and energy). This will happen successively, sphere after sphere, until the moment it reaches the last one, which will then begin its upward movement with the same velocity that the first sphere had when it collided with the stationary ones, thus reaching the same height from which that first one was released. If more than one sphere is released, all happens in the exact same way, so that the laws of phisycs are respected. 
+\end{quote}
+\noindent\hrulefill
+\section{Program Functioning}
+\begin{quote}
+After sucessfuly compilling the program with "./ggtk", an initial window will appear. That window will be the core of the program, allowing the user to define a series os characteristics about the cradle, with buttons that define:  
+\begin{itemize}
+\item The number of spheres initially released from both sides;
+\item Initial velocity of the spheres;
+\item Initial angle of the spheres.
+\end{itemize}
+While creating this project, our main goal was to create a simple and interative program that could easily be used by anyone, much as maintaining its scientific correction.
+The first thing the user will have to do when using the program, will be to decide how many spheres he wants the cradle to have. 
+This can be done by two different means; he can either type the number of pendulums he wants, directly into the respective box, or he can keep adding them, by clicking on the arrows, up or down. 
+\begin{figure}[hb]
+  \centering
+  \includegraphics[width=6cm]{imagem1.png}
+\end{figure}
+
+Note that, to change the other variables, the procedure will be the same.
+The default number of pendulums appearing in the initial window will be of three. The maximum number of pendulums will be fifteen, and the minimum two.
+Then, the user will have to decide the number of spheres being released from each side of the cradle, knowing that the sum of spheres leaving the left and the right side, cannot be bigger than the total number of spheres in the pendulum. 
+\begin{figure}[hb]
+  \centering
+  \includegraphics[width=7cm]{imagem2.png}
+  \includegraphics[width=7cm]{imagem3.png}
+\end{figure}
+
+If, by mistake, the user doesn't respect this, a new window will open, alerting him of his error. \\
+At this point, the only thing left to do before being able to run the program is giving values to the initial velocity and/or angle of the spheres on both sides of the cradle. 
+\begin{figure}[hb]
+  \centering
+  \includegraphics[width=7cm]{imagem4.png}
+\end{figure}
+
+After this, the user will finally be ready to see the motion of the cradle he "built". To do so, he will only have to press the \textit{play} button, and the pendulum will start its movement. A \textit{pause} button is also available, so that the user can freeze the movement at any moment. Finally, we created a \textit{reset} button, that, when pressed, brings every variable to the initial values. To quit the program, the user can press the \textit{quit} button, or the usual quitting button on the left right corner. There is also a \textit{about} button that gives information about this program and its writers. 
+To give some extra customization to the cradle, we included some background themes that can be selected by the user in the top right of the window.
+\begin{figure}[hb]
+  \centering
+  \includegraphics[width=7cm]{imagem6.png}
+  \includegraphics[width=7cm]{imagem7.png}
+\end{figure}
+
+\noindent\hrulefill
+\end{quote}
+\end{document}
