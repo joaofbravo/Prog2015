@@ -1,1 +1,3 @@
-Please, watch [this video](https://www.youtube.com/watch?v=My2FRPA3Gf8) before using the program, in order to get acquainted with the contex.
+Please, watch this video before using the program, in order to get acquainted with the contex.
+
+https://www.youtube.com/watch?v=My2FRPA3Gf8
